@@ -1,23 +1,23 @@
 // base
-@import './base/fontStyle.scss';
-@import './base/reset.scss';
-@import './base/base.scss';
-
+@import "./base/fontStyle.scss";
+@import "./base/reset.scss";
+@import "./base/base.scss";
+// @import "../../node_modules/material-symbols";
 // utils
-@import './utils/mixins.scss';
-@import './utils/functions.scss';
-@import './utils/variable.scss';
+@import "./utils/mixins.scss";
+@import "./utils/functions.scss";
+@import "./utils/variable.scss";
 
 // components
-@import './components/module.scss';
+@import "./components/module.scss";
 
 // layout
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
 // pages
-@import './pages/index.scss';
-@import './pages/product.scss';
-@import './pages/store.scss';
-@import './pages/fqa.scss';
-@import './pages/blog.scss';
+@import "./pages/index.scss";
+@import "./pages/product.scss";
+@import "./pages/store.scss";
+@import "./pages/fqa.scss";
+@import "./pages/blog.scss";

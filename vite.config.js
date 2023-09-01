@@ -25,6 +25,11 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "assets"),
+    },
+  },
   base: "/test0901/",
   plugins: [
     liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),

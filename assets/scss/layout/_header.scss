@@ -1,0 +1,25 @@
+header {
+    font-family: 'Noto Sans TC';
+
+    @include md {
+        height: auto;
+    }
+
+    @include sm {
+        height: auto;
+
+        .menu-md-lg {
+            display: none;
+        }
+
+        .menu-sm {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: calc(50%);
+                border: 1px solid $light;
+            }
+        }
+    }
+}

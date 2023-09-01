@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡官網</title>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/all.js"></script>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container py-20 py-xs-10">
+            <h2 class="title-border h-12 h-xs-6 fw-bold text-left ps-3 mt-4 mt-md-0">門市據點</h2>
+            <div class="location col-4 d-flex items-center mt-8 mt-sm-6 mb-10 mb-xs-6">
+                <h4 class="h-6 h-xs-4 text-left">選擇分店</h4>
+                <div class="dropdown d-flex content-between ms-4 ms-xs-2 px-3">
+                    <h5 class="text-dark">台北中山旗艦店</h5>
+                    <div class="span-style">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="store-info d-flex">
+                <div class="store-info-style col-5 px-3 mb-sm-6">
+                    <div class="card-store-info">
+                        <img src="../assets/images/store-1.png" alt="store1">
+                        <h4 class="h-6 py-2 px-6">台北中山旗艦店</h4>
+                        <div class="text py-4 px-6">
+                            <div class="d-flex mb-2">
+                                <div class="span-style d-flex content-center me-2">
+                                    <span class="phone material-symbols-outlined">
+                                        phone
+                                    </span>
+                                </div>
+                                <h5 class="h-5">電話：(02)000-1234</h5>
+                            </div>
+                            <div class="h-5 d-flex mb-2">
+                                <div class="span-style d-flex content-center me-2">
+                                    <span class="time material-symbols-outlined">
+                                        schedule
+                                    </span>
+                                </div>
+                                <h5 class="h-5">營業時間：10:00-21:00</h5>
+                            </div>
+                            <div class="h-5 d-flex mb-0">
+                                <div class="span-style d-flex content-center me-2">
+                                    <span class="address material-symbols-outlined">
+                                        location_on
+                                    </span>
+                                </div>
+                                <h5 class="h-5">地址：台北市中山區南京東路25巷2-1號</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store-info-style-lg d-none content-between items-center mb-lg-6">
+                    <div class="card-store-info col-6 px-3">
+                        <img src="../assets/images/storepage-1.png" alt="store1">
+                    </div>
+                    <div class="card-store-info-style col-6 px-3">
+                        <div class="card-store-info">
+                            <h4 class="h-6 py-2 px-6">台北中山旗艦店</h4>
+                            <div class="text py-4 px-6">
+                                <div class="h-5 d-flex mb-2">
+                                    <div class="span-style d-flex content-center me-3">
+                                        <span class="phone material-symbols-outlined">
+                                            phone
+                                        </span>
+                                    </div>
+                                    <h5 class="h-5">電話：(02)000-1234</h5>
+                                </div>
+                                <div class="h-5 d-flex mb-2">
+                                    <div class="span-style d-flex content-center me-3">
+                                        <span class="time material-symbols-outlined">
+                                            schedule
+                                        </span>
+                                    </div>
+                                    <h5 class="h-5">營業時間：10:00-21:00</h5>
+                                </div>
+                                <div class="h-5 d-flex mb-0">
+                                    <div class="span-style d-flex content-center me-3">
+                                        <span class="address material-symbols-outlined">
+                                            location_on
+                                        </span>
+                                    </div>
+                                    <h5 class="h-5">地址：台北市中山區南京東路25巷2-1號</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-store-map col-7 mb-xs-6">
+                    <iframe class="px-3"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1937295667176!2d121.58451357557267!3d25.06142213718641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1692354302435!5m2!1szh-TW!2stw"
+                        width="100%" height="100%" marginwidth="0" marginheight="0" scrolling="No"
+                        frameborder="0"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

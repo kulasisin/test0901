@@ -1,0 +1,258 @@
+// session-1
+.session-1 {
+  background: url(/assets/images/home-header.png) no-repeat center / cover;
+  height: 787px;
+
+  .container {
+    height: 100%;
+  }
+
+  button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-dark;
+    }
+  }
+
+  @include md {
+    background: url(/assets/images/home-header-sm.png) no-repeat center / cover;
+  }
+
+
+
+  @include xs {
+    background: url(/assets/images/home-header-sm.png) no-repeat center / cover;
+    height: 396px;
+  }
+}
+
+// session-2
+.session-2 {
+  .card {
+    // 扣掉多餘padding
+    margin-left: -12px;
+    margin-right: -12px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+  }
+
+  .card-list {
+    .icon {
+      width: 100px;
+      height: 100px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        /*是否填滿 0 or 1*/
+        'FILL' 0,
+        /*粗細 100 ~ 700*/
+        'wght' 700,
+        /*視覺平衡粗細 -25 0 200*/
+        'GRAD' 200,
+        /*大小*/
+        'opsz' 48;
+      font-size: 84px;
+    }
+
+    &:nth-child(4) {
+      .material-symbols-outlined {
+        font-variation-settings:
+          /*視覺平衡粗細 -25 0 200*/
+          'GRAD' 100;
+        font-size: 100px;
+      }
+    }
+
+    @include lg {
+      width: 50%;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+  }
+}
+
+// session-3
+.session-3 {
+  .img {
+    margin-left: -12px;
+    margin-right: -12px;
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: -24px;
+    }
+  }
+
+  .img-list {
+    h2 {
+      font-family: 'Roboto';
+      font-style: Italic;
+    }
+
+    @include lg {
+      width: 50%;
+    }
+
+    @include sm {
+      width: calc(75%);
+    }
+
+    @include xs {
+      width: 100%;
+    }
+  }
+}
+
+// session-4
+.session-4 {
+  background: url(/assets/images/index-bg.png) no-repeat center / cover;
+
+  @include md {
+    background: url(/assets/images/index-bg-md.png) no-repeat center / cover;
+    height: auto;
+  }
+
+  ul {
+    height: auto;
+
+    @include md {
+      flex-direction: column;
+      margin-bottom: -24px;
+    }
+  }
+
+  li {
+    width: 50%;
+
+    @include md {
+      width: 100%;
+    }
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: Italic;
+    }
+  }
+}
+
+// session-5
+.session-5 {
+  .card {
+    margin-left: -12px;
+    margin-right: -12px;
+
+    @include lg {
+      flex-wrap: wrap;
+      margin-bottom: -24px;
+    }
+
+    @include xs {
+      margin-bottom: -16px;
+    }
+
+  }
+
+  .card-style {
+    @include lg {
+      width: 50%;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+  }
+
+  .card-list {
+    border: $border-gray-light;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+
+    .text {
+      min-height: 205px;
+
+      small {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// session-6
+.session-6 {
+
+  input {
+    height: 36px;
+    background: transparent;
+    border: $border-dark;
+
+    &:focus {
+      outline: 2px solid $primary;
+      border-radius: 2px;
+      border: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      opacity: .2;
+    }
+  }
+
+  textarea {
+    resize: none;
+    background: transparent;
+    min-height: 136px;
+    border: $border-dark;
+
+    &:focus {
+      outline: 2px solid $primary;
+      border-radius: 2px;
+      border: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      opacity: .2;
+    }
+  }
+
+  input[type=checkbox] {
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    border-radius: 2px;
+
+    &:checked {
+      appearance: auto;
+      accent-color: $primary;
+    }
+  }
+
+  a {
+    max-width: 416px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-dark;
+    }
+  }
+
+  form {
+    @include md {
+      width: calc(100%*10/12);
+    }
+
+    @include xs {
+      width: 100%;
+    }
+  }
+}

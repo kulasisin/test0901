@@ -1,0 +1,11 @@
+.title-border {
+    border-left: $border-primary;
+}
+
+.qa-style {
+    margin-bottom: -32px;
+
+    @include md {
+        width: 100%;
+    }
+}

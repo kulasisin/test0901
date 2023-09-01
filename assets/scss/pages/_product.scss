@@ -1,0 +1,144 @@
+.nav-lg {
+    @include md {
+        display: none;
+    }
+}
+
+.nav-md-sm {
+    @include md {
+        display: flex;
+    }
+}
+
+.nav-item {
+    font-family: 'Roboto';
+    border: 1px solid #DCDCDC;
+
+    a {
+        height: 96px;
+
+        &:hover {
+            border-bottom: $border-primary;
+        }
+
+        &:focus {
+            border-bottom: $border-primary;
+        }
+
+        @include md {
+            height: 68px;
+        }
+
+        @include sm {
+            height: 56px;
+        }
+    }
+}
+
+.bg-img {
+    height: 296px;
+
+    .img-1 {
+        width: 50%;
+        background: url(/assets/images/product-header-1.png) no-repeat center / cover;
+    }
+
+    .img-2 {
+        width: 50%;
+        background: url(/assets/images/product-header-2.png) no-repeat center / cover;
+    }
+
+    .img-3 {
+        width: 50%;
+        background: url(/assets/images/product-header-3.png) no-repeat center / cover;
+    }
+
+    .img-4 {
+        width: 50%;
+        background: url(/assets/images/product-header-4.png) no-repeat center / cover;
+    }
+
+
+    @include md {
+        .img-1 {
+            background: url(/assets/images/product-header-1.png) no-repeat center / cover;
+        }
+
+        .img-2 {
+            background: url(/assets/images/product-header-2.png) no-repeat 60% / cover;
+        }
+
+        .img-3 {
+            background: url(/assets/images/product-header-sm-3.png) no-repeat center / cover;
+        }
+
+        .img-4 {
+            background: url(/assets/images/product-header-4.png) no-repeat 60% / cover;
+        }
+    }
+
+    @include xs {
+        height: 136px;
+
+        .img-1 {
+            background: url(/assets/images/product-header-sm-1.png) no-repeat center / cover;
+        }
+
+        .img-2 {
+            background: url(/assets/images/product-header-2.png) no-repeat 60% / cover;
+        }
+
+        .img-3 {
+            background: url(/assets/images/product-header-sm-3.png) no-repeat center / cover;
+        }
+
+        .img-4 {
+            background: url(/assets/images/product-header-sm-4.png) no-repeat 60% / cover;
+        }
+    }
+}
+
+.card-product {
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.card-list-product {
+    @include lg {
+        width: 50%;
+    }
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+.product-info {
+    h2 {
+        font-family: 'Roboto';
+        font-size: 42px;
+
+        @include xs {
+            font-size: 24px;
+        }
+    }
+
+    h4 {
+        font-family: 'Roboto';
+    }
+}
+
+.color-1 {
+    width: 24px;
+    height: 24px;
+    background-color: #5F3E2D;
+    border-radius: 4px;
+}
+
+.color-2 {
+    width: 24px;
+    height: 24px;
+    background-color: #B75929;
+    border-radius: 4px;
+}

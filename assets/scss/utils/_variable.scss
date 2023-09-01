@@ -1,0 +1,102 @@
+// 字體大小
+// 中文 h1: 64px/ h2: 48px/ h3: 32px/ h4: 24px/ h5: 16px 
+// $h1: 64px;
+// $h2: 48px;
+// $h3: 32px;
+// $h4: 24px;
+// $h5: 16px;
+
+// 英文 
+// $en-h2: 42px;
+// $en-h3: 32px;
+// $en-h4: 24px;
+// $en-h5: 20px;
+
+// 符號
+$breadcrumb-divider: quote("/");
+$tags-icon: quote("#");
+
+
+// 色彩設定
+$primary: #AA0601;
+$primary-dark: #650300;
+$primary-tint: #FBF2F2;
+$dark: #000000;
+$light: #ffff;
+$gray: #707070;
+$gray-dark: #555555;
+$gray-light: #DEE2E6;
+$border-primary: 8px solid $primary;
+$border-dark: 1px solid $dark;
+$border-gray: 1px solid #00000020;
+$border-gray-second: 1px solid #707070;
+$border-gray-light: 1px solid $gray-light;
+$border-gray-dark: 1px solid $gray-dark;
+
+.bg-primary {
+    background: $primary;
+}
+
+.bg-primary-dark {
+    background: $primary-dark;
+}
+
+.bg-primary-tint {
+    background: $primary-tint;
+}
+
+.bg-dark {
+    background: $dark;
+}
+
+.bg-light {
+    background: $light;
+}
+
+.bg-gray {
+    background: $gray;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-primary-dark {
+    color: $primary-dark;
+}
+
+.text-primary-tint {
+    color: $primary-tint;
+}
+
+.text-dark {
+    color: $dark;
+}
+
+.text-light {
+    color: $light;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-gray-dark {
+    color: $gray-dark;
+}
+
+.active-color {
+    color: $primary;
+}
+
+.active-color-none {
+    color: none;
+}
+
+.active-border {
+    border-bottom: $border-primary;
+}
+
+.active-none {
+    border-bottom: none;
+}

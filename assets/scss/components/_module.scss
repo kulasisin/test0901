@@ -1,0 +1,50 @@
+.pagination {
+
+    li {
+        border: $border-gray-dark;
+        float: left;
+        margin-left: -1px;
+
+        &:nth-child(7) {
+            background: #F2F2F2;
+        }
+    }
+
+    a {
+        font-family: 'Roboto';
+        height: 48px;
+
+        &:hover {
+            background: $dark;
+            color: $light;
+        }
+
+        &:focus {
+            background: $dark;
+            color: $light;
+        }
+    }
+
+    .pages-previous-next {
+        font-size: 19px;
+
+        @include xs {
+            font-size: 16px;
+        }
+    }
+
+    .pages-item {
+        font-size: 18px;
+
+        @include xs {
+            font-size: 16px;
+        }
+    }
+
+
+    @include xs {
+        a {
+            height: 45px;
+        }
+    }
+}

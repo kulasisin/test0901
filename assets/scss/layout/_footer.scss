@@ -1,0 +1,86 @@
+.social {
+  img {
+    width: 48px;
+
+    @include md {
+      width: 40px;
+    }
+
+    @include sm {
+      width: 32px;
+    }
+
+    @include xs {
+      width: 24px;
+    }
+  }
+}
+
+.nav-md-lg {
+  @include sm {
+    display: none;
+  }
+}
+
+.info-md-lg {
+  .span-style {
+    width: 48px;
+    height: 48px;
+  }
+
+  .material-icons-outlined {
+    font-variation-settings:
+      /*是否填滿 0 or 1*/
+      'FILL' 0,
+      /*粗細 100 ~ 700*/
+      'wght' 500,
+      /*視覺平衡粗細 -25 0 200*/
+      'GRAD' 200,
+      /*大小*/
+      'opsz' 48;
+  }
+
+  border-bottom: 1px solid #ffff;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.nav-sm {
+  .span-style {
+    width: 24px;
+    height: 24px;
+  }
+
+  @include sm {
+    display: flex;
+    border-bottom: 1px solid #ffff;
+
+    .phone {
+      font-size: 18px;
+    }
+
+    .email {
+      font-size: 20px;
+    }
+  }
+}
+
+.copyright {
+  p {
+    font-family: 'Roboto';
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  @include sm {
+    display: block;
+
+    ul {
+      display: block;
+    }
+  }
+}

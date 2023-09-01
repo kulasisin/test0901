@@ -1,0 +1,370 @@
+$max: 20;
+
+// margin & padding
+
+@for $i from 0 through $max {
+    .mx-#{$i} {
+        margin-left: $i * 4px;
+        margin-right: $i * 4px;
+    }
+
+    .ms-#{$i} {
+        margin-left: $i * 4px;
+    }
+
+    .me-#{$i} {
+        margin-right: $i * 4px;
+    }
+
+    .my-#{$i} {
+        margin-bottom: $i * 4px;
+        margin-top: $i * 4px;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $i * 4px;
+    }
+
+    .mt-#{$i} {
+        margin-top: $i * 4px;
+    }
+
+    .px-#{$i} {
+        padding-left: $i * 4px;
+        padding-right: $i * 4px;
+    }
+
+    .ps-#{$i} {
+        padding-left: $i * 4px;
+    }
+
+    .pe-#{$i} {
+        padding-right: $i * 4px;
+    }
+
+    .py-#{$i} {
+        padding-bottom: $i * 4px;
+        padding-top: $i * 4px;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $i * 4px;
+    }
+
+    .pt-#{$i} {
+        padding-top: $i * 4px;
+    }
+}
+
+
+// $i 是代表數字的變數
+// $i from 0 through $max 代表會設定出 0~$max，也就是 0~10 的數字
+// 最後就會編譯出 .mb-md-1 ~ .mb-md-10 共十種間距數值的 margin-bottom。
+$max: 20;
+
+@media (max-width: 992px) {
+    @for $i from 0 through $max {
+        .mx-lg-#{$i} {
+            margin-left: $i * 4px;
+            margin-right: $i * 4px;
+        }
+
+        .ms-lg-#{$i} {
+            margin-left: $i * 4px;
+        }
+
+        .me-lg-#{$i} {
+            margin-right: $i * 4px;
+        }
+
+        .my-lg-#{$i} {
+            margin-bottom: $i * 4px;
+            margin-top: $i * 4px;
+        }
+
+        .mt-lg-#{$i} {
+            margin-top: $i * 4px;
+        }
+
+        .mb-lg-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+
+        .px-lg-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+
+        .ps-lg-#{$i} {
+            padding-left: $i * 4px;
+        }
+
+        .pe-lg-#{$i} {
+            padding-right: $i * 4px;
+        }
+
+        .py-lg-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+
+        .pt-lg-#{$i} {
+            padding-top: $i * 4px;
+        }
+
+        .pb-lg-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    @for $i from 0 through $max {
+        .mx-md-#{$i} {
+            margin-left: $i * 4px;
+            margin-right: $i * 4px;
+        }
+
+        .ms-md-#{$i} {
+            margin-left: $i * 4px;
+        }
+
+        .me-md-#{$i} {
+            margin-right: $i * 4px;
+        }
+
+        .my-md-#{$i} {
+            margin-bottom: $i * 4px;
+            margin-top: $i * 4px;
+        }
+
+        .mt-md-#{$i} {
+            margin-top: $i * 4px;
+        }
+
+        .mb-md-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+
+        .px-md-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+
+        .ps-md-#{$i} {
+            padding-left: $i * 4px;
+        }
+
+        .pe-md-#{$i} {
+            padding-right: $i * 4px;
+        }
+
+        .py-md-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+
+        .pt-md-#{$i} {
+            padding-top: $i * 4px;
+        }
+
+        .pb-md-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    @for $i from 0 through $max {
+        .mx-sm-#{$i} {
+            margin-left: $i * 4px;
+            margin-right: $i * 4px;
+        }
+
+        .ms-sm-#{$i} {
+            margin-left: $i * 4px;
+        }
+
+        .me-sm-#{$i} {
+            margin-right: $i * 4px;
+        }
+
+        .my-sm-#{$i} {
+            margin-bottom: $i * 4px;
+            margin-top: $i * 4px;
+        }
+
+        .mt-sm-#{$i} {
+            margin-top: $i * 4px;
+        }
+
+        .mb-sm-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+
+        .px-sm-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+
+        .ps-sm-#{$i} {
+            padding-left: $i * 4px;
+        }
+
+        .pe-sm-#{$i} {
+            padding-right: $i * 4px;
+        }
+
+        .py-sm-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+
+        .pt-sm-#{$i} {
+            padding-top: $i * 4px;
+        }
+
+        .pb-sm-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    @for $i from 0 through $max {
+        .mx-xs-#{$i} {
+            margin-left: $i * 4px;
+            margin-right: $i * 4px;
+        }
+
+        .ms-xs-#{$i} {
+            margin-left: $i * 4px;
+        }
+
+        .me-xs-#{$i} {
+            margin-right: $i * 4px;
+        }
+
+        .my-xs-#{$i} {
+            margin-bottom: $i * 4px;
+            margin-top: $i * 4px;
+        }
+
+        .mt-xs-#{$i} {
+            margin-top: $i * 4px;
+        }
+
+        .mb-xs-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+
+        .px-xs-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+
+        .ps-xs-#{$i} {
+            padding-left: $i * 4px;
+        }
+
+        .pe-xs-#{$i} {
+            padding-right: $i * 4px;
+        }
+
+        .py-xs-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+
+        .pt-xs-#{$i} {
+            padding-top: $i * 4px;
+        }
+
+        .pb-xs-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+// 字體大小
+
+@for $i from 1 through $max {
+    .h-#{$i} {
+        font-size: $i * 4px;
+    }
+}
+
+@media (max-width: 992px) {
+    @for $i from 1 through $max {
+        .h-lg-#{$i} {
+            font-size: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    @for $i from 1 through $max {
+        .h-md-#{$i} {
+            font-size: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    @for $i from 1 through $max {
+        .h-sm-#{$i} {
+            font-size: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    @for $i from 1 through $max {
+        .h-xs-#{$i} {
+            font-size: $i * 4px;
+        }
+    }
+}
+
+// 欄
+
+.col-3 {
+    width: calc(100%*3/12)
+}
+
+.col-4 {
+    width: calc(100%*4/12);
+}
+
+.col-5 {
+    width: calc(100%*5/12);
+}
+
+.col-6 {
+    width: calc(100%/2);
+}
+
+.col-7 {
+    width: calc(100%*7/12);
+}
+
+.col-8 {
+    width: calc(100%*8/12);
+}
+
+.col-9 {
+    width: calc(100%*9/12);
+}
+
+.col-10 {
+    width: calc(100%*10/12);
+}
+
+.col-11 {
+    width: calc(100%*11/12);
+}
+
+.col-12 {
+    width: 100%;
+}

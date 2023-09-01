@@ -1,0 +1,283 @@
+// 吃不到字體設定
+body {
+    font-family: "Noto";
+}
+
+.blog-nav-lg {
+    height: 56px;
+
+    .blog-nav {
+        margin-left: -24px;
+    }
+
+    .search {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                /*是否填滿 0 or 1*/
+                'FILL' 0,
+                /*粗細 100 ~ 700*/
+                'wght' 700,
+                /*視覺平衡粗細 -25 0 200*/
+                'GRAD' 200,
+                /*大小*/
+                'opsz' 48;
+            font-size: 30px;
+        }
+    }
+
+    input {
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        max-inline-size: 204px;
+        height: 28px;
+
+        &::placeholder {
+            font-size: 14px;
+            opacity: .5;
+        }
+    }
+
+    @include sm {
+        display: none;
+    }
+}
+
+.blog-nav-sm {
+    height: 48px;
+
+    @include sm {
+        display: flex;
+    }
+}
+
+.title-border {
+    border-left: $border-primary;
+}
+
+.card-blog {
+
+    @include sm {
+        width: 100%;
+    }
+
+    .card-blog-list {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        @include md {
+            width: 100%;
+        }
+
+        @include sm {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .card-blog-img {
+        @include sm {
+            width: 100%;
+        }
+    }
+
+    .card-blog-content {
+
+        p {
+            min-height: 144px;
+            overflow: hidden;
+            // text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6; //超出多行修改數字2就是兩行、3就是三行...以此類推
+            -webkit-box-orient: vertical;
+        }
+
+        @include sm {
+            width: 100%;
+        }
+    }
+
+    .text {
+        .text-style {
+            font-family: 'Roboto';
+        }
+
+        small {
+            opacity: .7;
+        }
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    .text-sm-xs {
+        @include sm {
+            width: 100%;
+            display: block;
+        }
+    }
+
+
+    .xl-style {
+        a {
+            font-family: 'Roboto';
+
+            @include xl {
+                display: none;
+            }
+        }
+    }
+}
+
+// blog-pages
+
+.breadcrumb {
+    .divider {
+        &::after {
+            content: $breadcrumb-divider;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+
+    a {
+        &:focus {
+            color: $primary;
+            pointer-events: none;
+        }
+    }
+}
+
+
+.content {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.title-tag {
+    h4 {
+        font-family: "Roboto";
+    }
+}
+
+.article {
+    h4 {
+        font-family: "Roboto";
+    }
+
+    @include md {
+        width: calc(100%*9/12);
+    }
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+.tags {
+    font-family: "Roboto";
+
+    @include md {
+        width: calc(100%*3/12);
+    }
+
+    .span-style {
+        width: 48px;
+        height: 48px;
+
+        @include md {
+            width: 24px;
+            height: 24px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                /*是否填滿 0 or 1*/
+                'FILL' 0,
+                /*粗細 100 ~ 700*/
+                'wght' 700,
+                /*視覺平衡粗細 -25 0 200*/
+                'GRAD' 0,
+                /*大小*/
+                'opsz' 48;
+            font-size: 38px;
+
+            @include md {
+                font-variation-settings:
+                    /*是否填滿 0 or 1*/
+                    'FILL' 0,
+                    /*粗細 100 ~ 700*/
+                    'wght' 700,
+                    /*視覺平衡粗細 -25 0 200*/
+                    'GRAD' 200,
+                    /*大小*/
+                    'opsz' 32;
+                font-size: 19px;
+            }
+        }
+    }
+
+    li {
+        &::before {
+            content: $tags-icon;
+        }
+    }
+
+    @include md {
+        width: calc(100%*3/12);
+    }
+
+    @include xs {
+        display: none;
+    }
+}
+
+.share {
+    border-bottom: $border-gray-second;
+
+    small {
+        color: #0A0A0A;
+    }
+
+    img {
+        width: 24px;
+    }
+
+    @include xs {
+        display: none;
+    }
+}
+
+.pagination-arrow {
+
+    .span-style {
+        width: 24px;
+        height: 24px;
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                /*是否填滿 0 or 1*/
+                'FILL' 0,
+                /*粗細 100 ~ 700*/
+                'wght' 700,
+                /*視覺平衡粗細 -25 0 200*/
+                'GRAD' 0,
+                /*大小*/
+                'opsz' 48;
+            font-size: 16px;
+        }
+    }
+
+    @include xs {
+        display: none;
+    }
+}
